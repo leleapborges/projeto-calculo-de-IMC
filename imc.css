@@ -1,0 +1,91 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background-image: url('imc.jpg');
+    background-size:cover;
+    text-align: center;
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    max-width: 600px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    text-align: center;
+    color: darkblue;
+}
+
+.texto{
+    margin-top: 20px;
+}
+
+.label-input{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    color: darkblue;
+    font-weight: bold;
+}
+
+.input-wrappeer{
+    position: relative;
+}
+
+input[type="number"]{
+    width: 100%;
+    padding: 10px;
+    border: 10x sold #ccc;
+    border-radius: 3px;
+}
+
+.botao{
+    text-align: center;
+    margin-top: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: backgroud-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#resultado{
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+@media only screen and (max-whidth: 500px){
+    .container{
+        padding: 10px;
+    }
+
+    .texto{
+        padding: 10px;
+    }
+
+    button{
+        padding: 8px 16px;
+    }
+}
